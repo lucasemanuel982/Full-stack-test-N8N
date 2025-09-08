@@ -1,0 +1,33 @@
+{
+  "name": "n8n-workflows",
+  "version": "1.0.0",
+  "description": "N8N workflows para integração com PostgreSQL e API backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "n8n start",
+    "dev": "n8n start --tunnel",
+    "setup-db": "node scripts/database-setup.js",
+    "test-db": "node scripts/test-connection.js",
+    "generate-key": "node scripts/generate-encryption-key.js",
+    "migrate": "node scripts/database-setup.js",
+    "check-auth": "node scripts/reset-auth.js",
+    "reset-n8n": "node scripts/reset-n8n-auth.js",
+    "check-users": "node scripts/check-n8n-users.js"
+  },
+  "dependencies": {
+    "n8n": "^1.0.0",
+    "@neondatabase/serverless": "^0.9.0",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "n8n",
+    "workflow",
+    "automation",
+    "postgresql"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT"
+}
